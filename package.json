@@ -1,15 +1,21 @@
 {
   "name": "hardhat-javascript-starter",
   "scripts": {
+    "compile": "npx hardhat compile",
     "build": "npx thirdweb@latest detect",
     "deploy": "npx thirdweb@latest deploy",
+    "deploy-local": "npx hardhat run scripts/deploy.ts",
     "release": "npx thirdweb@latest release"
   },
-  "devDependencies": {
-    "hardhat": "^2.10.1"
-  },
   "dependencies": {
-    "@thirdweb-dev/contracts": "^3",
-    "dotenv": "^16.0.3"
+    "@nomicfoundation/hardhat-toolbox": "latest",
+    "@nomiclabs/hardhat-ethers": "latest",
+    "@nomiclabs/hardhat-waffle": "latest",
+    "@thirdweb-dev/contracts": "latest",
+    "dotenv": "latest",
+    "ethers": "latest",
+    "hardhat": "latest",
+    "ts-node": "latest",
+    "typescript": "latest"
   }
 }
